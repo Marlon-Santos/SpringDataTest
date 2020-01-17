@@ -2,7 +2,7 @@ package br.com.gft.crud.model;
 
 import javax.persistence.*;
 import java.util.Objects;
-
+"//"
 @Entity
 @Table(name = cadastro)
 public class Cadastro {
