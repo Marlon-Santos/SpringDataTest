@@ -1,5 +1,6 @@
 package br.com.gft.crud;
-import entities.TestCrud;
+
+import entities.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,10 +9,9 @@ public class CrudApplication {
 
 
     public static void main(String[] args) {
-
         SpringApplication.run(CrudApplication.class, args);
-		TestCrud test = new TestCrud();
-		test.test();
+        User u = new User("marlon","marlon@gmail.com");
+        System.out.println("testandohhgjh");
     }
 
 }

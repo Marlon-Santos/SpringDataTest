@@ -2,9 +2,8 @@ package br.com.gft.crud.model;
 
 import javax.persistence.*;
 import java.util.Objects;
-"//"
 @Entity
-@Table(name = cadastro)
+@Table(name = "cadastro")
 public class Cadastro {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,6 +38,5 @@ public class Cadastro {
     public void setName(String name) {
         this.name = name;
     }
-
 
 }
