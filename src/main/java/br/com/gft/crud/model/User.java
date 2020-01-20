@@ -3,19 +3,37 @@ package br.com.gft.crud.model;
 import javax.persistence.*;
 import java.util.Objects;
 @Entity
-@Table(name = "cadastro")
-public class Cadastro {
+@Table(name = "useractive")
+public class User {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private String email;
+    private String active;
+
+    public String getActive() {
+        return active;
+    }
+
+    public void setActive(String active) {
+        this.active = active;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Cadastro cadastro = (Cadastro) o;
-        return Objects.equals(id, cadastro.id);
+        User user = (User) o;
+        return Objects.equals(id, user.id);
     }
 
     @Override
